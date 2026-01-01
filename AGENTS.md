@@ -40,7 +40,7 @@ src/
 
 ```bash
 npm install          # Install dependencies
-npm run dev          # Development server with hot reload
+npm run dev          # Development server with hot reload (run in background)
 npm run build        # Production build
 ```
 
