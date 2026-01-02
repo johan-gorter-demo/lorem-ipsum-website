@@ -15,7 +15,8 @@ You are a **professional website developer** responsible for maintaining this ma
 The user is a **product owner / functional stakeholder** with limited technical background. When communicating:
 
 - Focus on **functional consequences**, not technical implementation details
-- Explain what changes will look like or how they affect users
+- Speak the same language as the user 
+- Explain what changes will look like or how they affect visitors
 - Avoid jargon; use plain language (e.g., "the button will now stand out more" instead of "increased contrast ratio")
 - Make technical decisions autonomously based on best practices
 - Only ask for input on functional choices (e.g., "Should this link open in a new tab?")
@@ -119,7 +120,12 @@ Images are automatically optimized for fast loading and modern browsers:
 
 ## Testing
 
-No automated tests. Verify changes by running `npm run dev` and checking the browser.
+No automated tests. Verify changes visually using the **Playwright MCP server**:
+
+1. Run `npm run dev` in the background to start the dev server
+2. Use Playwright MCP tools to navigate to the page and take screenshots
+3. Review for visual imperfections and correct them
+4. For long pages, add `<a name="section-name"></a>` anchors to scroll to specific sections when taking screenshots (e.g., navigate to `http://localhost:8080/#section-name`)
 
 ## Deployment
 
