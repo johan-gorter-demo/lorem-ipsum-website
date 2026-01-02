@@ -1,23 +1,23 @@
 @import "tailwindcss";
 
-/* Custom styles - Earthy/Sandy Color Palette */
+/* Custom styles - Purple Color Palette */
 :root {
-  --primary: #b08968; /* Warm sand/camel */
-  --primary-dark: #7f5539; /* Rich earth brown */
-  --primary-light: #ddb892; /* Light sand */
-  --primary-lighter: #efe0d1; /* Very light sand */
-  --text: #3d2c1e; /* Dark earth */
-  --text-muted: #6b5344; /* Muted earth */
-  --text-light: #a89585; /* Light text for dark backgrounds */
-  --bg: #faf6f1; /* Warm cream */
-  --bg-alt: #f0e9e0; /* Alternate background */
-  --bg-dark: #44403c; /* Dark background (footer) */
-  --border: #d4c4b5; /* Border color */
-  --border-dark: #57534e; /* Dark border */
+  --primary: #8b5cf6; /* Vibrant purple */
+  --primary-dark: #6d28d9; /* Deep purple */
+  --primary-light: #a78bfa; /* Light purple */
+  --primary-lighter: #ede9fe; /* Very light purple */
+  --text: #1e1b4b; /* Dark indigo */
+  --text-muted: #4c4669; /* Muted purple */
+  --text-light: #c4b5fd; /* Light text for dark backgrounds */
+  --bg: #faf5ff; /* Soft purple tint */
+  --bg-alt: #f3e8ff; /* Alternate background */
+  --bg-dark: #3b0764; /* Dark purple (footer) */
+  --border: #ddd6fe; /* Border color */
+  --border-dark: #581c87; /* Dark border */
 
-  /* Button colors (gold) */
-  --btn: #d4a04a; /* Rich gold */
-  --btn-hover: #b8860b; /* Dark goldenrod */
+  /* Button colors (purple) */
+  --btn: #7c3aed; /* Rich purple */
+  --btn-hover: #5b21b6; /* Dark purple */
   --btn-text: #ffffff; /* Button text */
 }
 
@@ -120,7 +120,7 @@ main {
 
 .form-input:focus {
   border-color: var(--primary);
-  box-shadow: 0 0 0 3px rgba(176, 137, 104, 0.2);
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.2);
 }
 
 /* Button styles */
@@ -143,4 +143,16 @@ main {
 
 .btn:hover {
   background-color: var(--btn-hover);
+}
+
+/* Light button for dark/gradient backgrounds */
+.btn-light {
+  background-color: white;
+  color: var(--primary-dark);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-light:hover {
+  background-color: var(--primary-lighter);
+  transform: translateY(-1px);
 }

@@ -62,8 +62,8 @@ npm run build        # Production build
 
 - Use Tailwind utility classes directly in templates
 - Custom theme colors are defined in `input.css` as CSS variables
-- Color palette: earthy/sandy tones (primary: `#b08968`, background: `#faf6f1`)
-- Custom utility classes available: `.bg-primary`, `.text-primary-dark`, `.btn-primary`, etc.
+- Color palette: purple tones (primary: `#8b5cf6`, background: `#faf5ff`)
+- Custom utility classes available: `.bg-primary`, `.text-primary-dark`, `.btn`, `.btn-light`, etc.
 
 ### Images
 
